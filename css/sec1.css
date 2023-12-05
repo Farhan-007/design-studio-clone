@@ -1,0 +1,61 @@
+.sec-1 {
+    padding: 10rem 7rem 3rem 7rem;
+    gap: 2.5rem;
+}
+
+.sec-1 h1 {
+    font-size:  4.5rem;
+    line-height: 1;
+    font-weight: 800;
+    /* letter-spacing: 3px; */
+}
+
+.sec-1 h1 span {
+    background-image: linear-gradient(#fff, #ffb1da 21%, #ff5bb3 48%, #7100ff 77%, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec-1 p {
+    width: 66%;
+    color: #9b9b9b;
+    font-size: 22px;
+    line-height: 2.25rem/* 32px */;
+    font-weight: 500;
+}
+
+.sec-1 button {
+    font-size: 18px;
+    line-height: 2rem/* 32px */;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin-block: 30px 20px ;
+    background-image: linear-gradient(#f3a7dd, #eb50e9 44%, #450399);
+    border-radius: 6vw;
+    box-shadow: 
+    0 0 50px #000000 ,
+    0 40px 80px -15px #eb50e9 ,
+    0 55px 150px -18px #eb50e9 ;
+}
+
+.info .images{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.info img {
+    object-fit: contain;
+    height: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.info .circle:nth-child(n + 2) {
+    margin-left: -10px;
+}
+
+.info p {
+    font-size: 15px;
+    line-height: 1.5rem;
+}

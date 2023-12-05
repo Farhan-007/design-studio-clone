@@ -1,0 +1,23 @@
+.card-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.container {
+    width: min-content;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.card {
+    display: block;
+    height: 450px;
+    aspect-ratio: 1/1;
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 5px;
+}
