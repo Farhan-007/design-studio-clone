@@ -1,0 +1,74 @@
+.sec-2 {
+    padding: 7rem 0 5rem 0;
+    overflow: hidden;
+}
+
+.sec-2 div .title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .4em;
+    color: var(--text-grey);
+}
+
+.sec-2 div i, .end .sub {
+    color: var(--text-grey);
+}
+
+.sec-2 div h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.steps-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    margin: 1rem 0;
+}
+
+.steps-container .step {
+    display: flex;
+}
+
+.steps-block {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 4rem;
+    /* background: #505050; */
+}
+
+.steps-block.info {
+    text-align: left;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step button {
+    position: absolute;
+    font-size: 1.25rem;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-image: linear-gradient( 135deg,#f3a7dd, #eb50e9 44%, #450399);
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: var(--text-grey);
+}

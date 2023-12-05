@@ -12,6 +12,7 @@ document.onreadystatechange = function () {
         setTimeout(function () {
             document.getElementById('interactive');
             document.getElementById('load').style.opacity = "0";
+            document.getElementById('load').style.display = "none";
             document.getElementById('contents').style.opacity = "1";
 
         }, 1000);
