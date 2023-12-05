@@ -7,15 +7,16 @@ const cards = gsap.utils.toArray('.container .card')
 document.onreadystatechange = function () {
     var state = document.readyState
     if (state == 'interactive') {
-         document.getElementById('contents').style.visibility="hidden";
+        document.getElementById('contents').style.opacity = "0";
     } else if (state == 'complete') {
-        setTimeout(function(){
-           document.getElementById('interactive');
-           document.getElementById('load').style.visibility="hidden";
-           document.getElementById('contents').style.visibility="visible";
-        },1000);
+        setTimeout(function () {
+            document.getElementById('interactive');
+            document.getElementById('load').style.opacity = "0";
+            document.getElementById('contents').style.opacity = "1";
+
+        }, 1000);
     }
-  }
+}
 
 //horizontal scroll cards
 let scrollTween = gsap.to(cards, {

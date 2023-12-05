@@ -3,7 +3,8 @@
 /* 0110 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-:root{
+
+:root {
     --bg-grey: #0d0a12;
     --bg-head: #20202044;
     --bg-blck: #0c0913;
@@ -15,12 +16,21 @@
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--bg-grey);
     color: white;
     font-family: 'Montserrat', sans-serif;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 main {
@@ -49,7 +59,7 @@ header ul {
     border-radius: 20px;
 }
 
-.nav-bar li{
+.nav-bar li {
     padding: 8px 15px;
     color: inherit;
 }
@@ -90,14 +100,58 @@ section {
     background: var(--bg-blck);
 }
 
-#load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
+#load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: screen;
+    transition: opacity 500ms;
+}
+
+#load img {
+    width: 200px;
+}
+
+#load .loader::before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    height: 190px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: block;
+    background-image: linear-gradient(#f3a7dd, #eb50e9 44%, #450399);
+    mix-blend-mode: color;
+    animation: rotate 3000ms linear infinite ;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 /* @media (min-width: 768px) {section {max-width: 1160px;}} */
-@media (min-width: 995px) {main {max-width: 995px;}}
-@media (min-width: 1160px) {main {max-width: 1160px;}}
-@media (min-width: 1440px) {main {max-width: 1660px;}}
+@media (min-width: 995px) {
+    main {
+        max-width: 995px;
+    }
+}
+
+@media (min-width: 1160px) {
+    main {
+        max-width: 1160px;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        max-width: 1660px;
+    }
+}

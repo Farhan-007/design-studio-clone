@@ -1,0 +1,36 @@
+.banner {
+    padding: 3rem;
+    color: #8f8f8f;
+    letter-spacing: .3em;
+    font-size: 12px;
+    font-weight: 800;
+    background: #09070d;
+}
+
+.logo-container {
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.logo {
+    position: relative;
+    height: 60px;
+    /* background: #8f8f8f; */
+}
+
+.logo img {
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    filter: contrast(0%);
+}
+
+.logo::before {
+    content: "";
+    display: block;
+    height: 60px;
+    aspect-ratio: 3/2;
+    position: absolute;
+    z-index: 2;
+}
